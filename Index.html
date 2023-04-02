@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Weather Application</title>
+    <link href="./Style.css" rel="stylesheet" />
+    <link href="./assets/css/all.css" rel="stylesheet" />
+    
+  </head>
+  <body>
+    <div id="container">
+      <div id="header">
+        <form  id="input-box" role="search" onclick="event.preventDefault()" >
+          <input
+            id="search-box"
+            type="text"
+            name="search"
+            placeholder="  Search Cities"
+            autofocus="true"
+            required 
+          >
+          <button id="search-button" onclick="getWeather()">
+            <i id="search" class="fa-solid fa-magnifying-glass"></i>
+            <i id="loading" class="fa fa-spinner fa-spin"></i>
+          </button>
+        </form>
+      </div>
+
+      <div id="status-page" onclick="getWeather()">
+        <div id="city-name"><h1 id="city-name-text"></h1></div>
+        <div id="current-status">
+          <div id="current-status-bold">
+            <img
+              id="status-img"
+              src="./assets/img/animated/rainy-1.svg"
+              alt="svg"
+            />
+            <div id="status-text"><span id="current-weather"></span></div>
+          </div>
+          <div id="temp"><span id="temp-value"></span></div>
+          <div id="sayer">
+            <h4>Wind Speed: <span id="wind-speed"></span></h4>
+            <h4>Humidity: <span id="humidity"> </span></h4> 
+            <h4>pressure :<span id="pressure"> </span></h4>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./App.js"></script>
+  </body>
+  
+</html>

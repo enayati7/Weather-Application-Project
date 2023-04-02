@@ -1,0 +1,132 @@
+@font-face {
+  font-family: lato;
+  src: url(./assets/font/lato/Lato-Reg.ttf);
+}
+body {
+  background-image: url(./assets/img/api.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: lato;
+}
+#container {
+  width: 60vw;
+  height: 97.5vh;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  background-color: rgba(201, 198, 202, 0.4);
+  border-radius: 5px;
+}
+#header {
+  width: 100%;
+  height: 25%;
+  margin-top: 0%;
+  display: flex;
+}
+#status-page {
+  width: 100%;
+  height: 75%;
+  border-radius: 0px 0px 5px 5px;
+  color: #04146d;
+  display: none;
+}
+form {
+  width: 80%;
+  height: 25%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+}
+#search-box {
+  width: 70%;
+  height: 90%;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  border-right: none;
+  font-weight: bold;
+  /* background-color: #9de29b; */
+}
+#search-button {
+  width: 10%;
+  height: 95%;
+  position: relative;
+  right: 15px;
+  border: none;
+  outline: none;
+  border-radius: 0px 5px 5px 0px;
+  font-weight: bold;
+  background-color: #ffa500;
+}
+#search {
+  display: block;
+}
+#loading {
+  display: none;
+}
+h1 {
+  width: 100%;
+  text-align: center;
+}
+#city-name {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  margin: auto;
+  margin-top: 0%;
+  justify-content: center;
+  align-items: start;
+  text-align: center;
+}
+#current-status {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  margin: auto;
+}
+#current-status-bold {
+  width: 30%;
+  height: 100%;
+  margin: auto;
+  justify-content: start;
+}
+#temp {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#sayer {
+  width: 30%;
+  height: 100%;
+  font-size: 22px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  text-decoration: left;
+}
+#status-img {
+  width: 80%;
+  height: 80%;
+  justify-content: center;
+}
+#status-text {
+  width: 100%;
+  height: 20%;
+  font-size: 30px;
+  text-align: center;
+  justify-content: center;
+}
+#temp-value {
+  width: 100%;
+  font-size: 60px;
+}
